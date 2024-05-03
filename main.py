@@ -6,6 +6,8 @@ from prophet.plot import plot_plotly
 import plotly.graph_objs as go
 import base64
 import pandas as pd
+import appdirs as ad
+ad.user_cache_dir = lambda *args: "/tmp"
 
 # Define constants
 start_date = "2015-01-01"
